@@ -4,8 +4,8 @@
   "description": "utility",
   "main": "app/index.js",
   "scripts": {
-    "preinstall": "./node_modules/gulp-coffee/node_modules/.bin/coffee -o ./app/ -c ./src/",
-    "postinstall": "./node_modules/gulp-mocha/node_modules/.bin/mocha app/*.js"
+    "preinstall": "./node_modules/.bin/coffee -o ./app/ -c ./src/",
+    "postinstall": "./node_modules/.bin/mocha app/*.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,8 @@
     "should": "^4.3.0"
   },
   "dependencies": {
-    "async": "^0.9.0"
+    "async": "^0.9.0",
+    "coffee-script": "^1.8.0",
+    "mocha": "^2.0.1"
   }
 }
