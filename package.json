@@ -1,11 +1,11 @@
 {
   "name": "bluezip-utility",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "utility",
   "main": "app/index.js",
   "scripts": {
-    "preinstall": "./node_modules/.bin/coffee -o ./app/ -c ./src/",
-    "postinstall": "./node_modules/.bin/mocha app/*.js"
+    "postinstall": "./node_modules/.bin/coffee -o ./app/ -c ./src/",
+    "test": "./node_modules/.bin/mocha app/**/*.js"
   },
   "repository": {
     "type": "git",
